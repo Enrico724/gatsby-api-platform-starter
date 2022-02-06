@@ -5,14 +5,16 @@
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build:clean": "rm -rf build && mkdir -p build",
+    "build:api-platform": "cd api-platform && copyfiles 'bin/**/*' 'config/**/*' 'src/**/*' 'vendor/**/*' composer.json ../build/${npm_package_name}",
+    "build:gatsby": "gatsby build && copyfiles 'public/**/*' build",
+    "build": "npm-run-all build:*",
     "develop": "gatsby develop & php -S localhost:4000 -t public && fg",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop & php -S localhost:4000 -t public && fg",
-    "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "postinstall": "composer install"
+    "postinstall": "cd api-platform && composer install"
   },
   "dependencies": {
     "gatsby": "^4.6.2",
@@ -20,6 +22,8 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "copyfiles": "latest",
+    "npm-run-all": "*"
   }
 }
