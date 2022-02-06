@@ -16,6 +16,8 @@
 
 1.  **Start developing.**
 
+    Before starting, open the `/public/api/index.php`, and rewrite the autoloder into `require_once dirname(__DIR__).'/../api-platform/vendor/autoload_runtime.php';`
+
     Navigate into your new site’s directory and start it up.
 
     ```shell
