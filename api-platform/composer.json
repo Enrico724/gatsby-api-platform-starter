@@ -63,7 +63,7 @@
         "symfony/symfony": "*"
     },
     "extra": {
-        "public-dir": "/public/api",
+        "public-dir": "public/api",
         "symfony": {
             "allow-contrib": false,
             "require": "5.4.*"
