@@ -35,6 +35,21 @@
 
     The source code is under the src Directory
 
+1. **Using GraphQL?**
+
+    Install the composer dependencies inside api-platform, following the API-Plstform docs.
+
+    Set up the Gatsby-plugin-apollo, and set up the client using the following function to retrive the correct api-endpoint. The following implementation is an graphql-example:
+
+    ```
+    const apiEntryPoint = () => {
+        const env = process.env.NODE_ENV
+        if (isBrowser && env === 'production')
+            return `/api/graphql`;
+        return `http://localhost:4000/api/graphql`;
+    }
+    ```
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
