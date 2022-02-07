@@ -28,5 +28,9 @@
     "prettier": "^2.5.1",
     "copyfiles": "latest",
     "npm-run-all": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Enrico724/gatsby-api-platform-starter.git"
   }
 }
