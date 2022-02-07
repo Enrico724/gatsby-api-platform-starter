@@ -10,7 +10,8 @@
         "api-platform/core": "*",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "symfony/flex": "^1.17|^2"
+        "symfony/flex": "^1.17|^2",
+        "symfony/apache-pack": "*"
     },
     "flex-require": {
         "symfony/console": "*",
@@ -62,7 +63,7 @@
         "symfony/symfony": "*"
     },
     "extra": {
-        "public-dir": "../public/api",
+        "public-dir": "/public/api",
         "symfony": {
             "allow-contrib": false,
             "require": "5.4.*"
