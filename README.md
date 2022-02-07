@@ -25,6 +25,8 @@
     npm run develop
     ```
 
+    **NOTICE:** insted of running `gatsby <command>`, use the available script defined in `package.json`. All Gatsby commands are rewritten in order to fully function with tha API-Platfom framework.
+
 1.  **Open the source code and start editing!**
 
     Gatsby is now running at `http://localhost:8000`!
