@@ -16,7 +16,7 @@
 
 1.  **Start developing.**
 
-    Before starting, open the `/public/api/index.php`, and rewrite the autoloder into `require_once dirname(__DIR__).'/../api-platform/vendor/autoload_runtime.php';`
+    Before starting, open the `/api-platform/public/api/index.php`, and rewrite the autoloder into `require_once dirname(__DIR__).'/../vendor/autoload_runtime.php';`
 
     Navigate into your new site’s directory and start it up.
 
@@ -38,31 +38,23 @@
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
     .
-    ├── bin
-    ├── config
+    ├── api-platform
     ├── node_modules
     ├── public
     ├── src
-    ├── static
-    ├── var
-    ├── vendor
-    ├── .env
     ├── .gitignore
     ├── .prettierrc
-    ├── composer.json
-    ├── composer.lock
     ├── gatsby-config.js
     ├── LICENSE
     ├── package-lock.json
     ├── package.json
-    ├── symfony.lock
     └── README.md
 
 ## 🛠 Build
 
 This starter has been built in order to port your app in any enviroment using less devops possible. Once you have run `npm run build`, your app will be available inside build directory. public will be places as your public_html folder, and my-app folder will we placed in the root folder.
 
-The only manual operation you have to do is opening the 'public/api/index.php' and edit the require file in order to it links you app souce code. This has to be done in order to make api-platform working.
+The only manual operation you have to do is opening the '/build/public/api/index.php' and edit the require file in order to it links you app souce code. This has to be done in order to make api-platform working.
 
 ## 🎓 Learning Gatsby
 
