@@ -67,3 +67,18 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+#api-platform
+/api-platform/.env.local
+/api-platform/.env.local.php
+/api-platform/.env.*.local
+/api-platform/config/secrets/prod/prod.decrypt.private.php
+/api-platform/public/api/bundles
+/api-platform/var/
+/api-platform/vendor/
+
+#build
+build
+
+#IDEs
+.idea
