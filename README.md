@@ -18,6 +18,13 @@
 
     Before starting, open the `/api-platform/public/api/index.php`, and rewrite the autoloder into `require_once dirname(__DIR__).'/../vendor/autoload_runtime.php';`
 
+    You have to set up your dev enviroment in order to accept CORS request, so you should add the following code to your `api-platform/.env` file
+
+    ```
+    ### Allow cors requests for development
+    CORS_ALLOW_ORIGIN='^https?://(localhost|127\.0\.0\.1)(:[0-9]+)?$'
+    ```
+
     Navigate into your new site’s directory and start it up.
 
     ```shell
